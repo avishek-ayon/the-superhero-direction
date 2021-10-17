@@ -5,8 +5,10 @@ import './Diary.css';
 
 const Diary = () => {
     const [millionars, setMillionars] = useState([])
+    // for cart
     const [cart, setCart] = useState([])
 
+    // data load
     useEffect(() => {
         fetch("./millionaires.JSON")
             .then(res => res.json())
@@ -14,6 +16,7 @@ const Diary = () => {
 
     }, [])
 
+    // function for click
     const handleToCart = (millionar) => {
         const newCart = [...cart, millionar]
         setCart(newCart);
@@ -22,6 +25,8 @@ const Diary = () => {
     return (
         <div className="row">
             <div className="col-md-9">
+
+                {/* millionare bio */}
                 <div className="row gy-4 diary-millionar">
                     {
                         millionars.map(millionar => < Millionairebio
@@ -34,6 +39,7 @@ const Diary = () => {
 
             </div>
 
+            {/* cart container */}
             <div className="networth-container col-md-3">
                 <div className="cart">
                     <Totalworth cart={cart}></Totalworth>
