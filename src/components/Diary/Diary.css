@@ -1,0 +1,9 @@
+
+.cart{
+    position: fixed;
+}
+.diary-millionar{
+    column-gap: 30px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}

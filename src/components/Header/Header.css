@@ -1,0 +1,11 @@
+.header{
+    text-align: center;
+    background-color: burlywood;
+    height: 250px;
+    margin-bottom: 50px;
+}
+.title{
+    color: darkslateblue;
+    font-weight: 900;
+    font-size:100px;
+}

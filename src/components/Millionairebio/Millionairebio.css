@@ -1,0 +1,15 @@
+.image{
+    border-radius: 50%;
+} 
+
+.cart-details{
+    background-color: #5f9ea0;
+}
+
+.btn-regular{
+    background-color: lightgreen;
+    border: 2px solid goldenrod;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: 900;
+}
